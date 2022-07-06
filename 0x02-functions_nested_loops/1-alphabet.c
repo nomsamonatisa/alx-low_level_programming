@@ -1,11 +1,11 @@
-#include <studio>
+#include <stdio.h>
 
-int main ()
-{
-	char ch = 'a';
-	while(ch <= 'z')
-	{
-		printf("%c ", ch);
-		ch++;
-        }
-	return 0;
+int main () {
+   char ch;
+
+   for(ch = 'z' ; ch <= 'z' ; ch++) {
+      putchar(ch);
+   }
+   
+   return(0);
+}
