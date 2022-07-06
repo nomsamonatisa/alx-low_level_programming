@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include "stdout"
+#define putchar(c) putc(c, stdout)
 /** main - print putchar
 * Return: always 0
 */ 
