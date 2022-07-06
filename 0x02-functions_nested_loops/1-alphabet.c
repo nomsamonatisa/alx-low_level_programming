@@ -1,17 +1,11 @@
-#include "_putchar"
+#include <studio>
 
-/**
- * print_alphabet - a function that prints the alphabet, in lowercase
- *
- * Return: Always 0 (Succes)
- */
-void print_alphabet(void)
+int main ()
 {
-	int n;
-
-	for (n = 'a'; n <= 'z'; n++)
+	char ch = 'a';
+	while(ch <= 'z')
 	{
-		_putchar(n);
-	}
-	_putchar('\n');
-}
+		printf("%c ", ch);
+		ch++;
+        }
+	return 0;
