@@ -1,1 +1,1 @@
-prints putchar
+This is a readme for 0x02-functions_nested_loops
