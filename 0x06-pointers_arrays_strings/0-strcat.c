@@ -1,19 +1,28 @@
-#include <iostream>
-using namespace std;
+#include "main.h"
+#include <stdio.h>
 
-int main()
+/**
+  * _strcat - Concatenates two strings
+  * @dest: The destination string
+  * @src: The source string
+  *
+  * Return: A pointer to the resulting string dest
+  */
+char *_strcat(char *dest, char *src)
 {
-    string s1, s2, result;
+	int dlen = 0, i;
 
-    cout << "Enter string s1: ";
-    getline (cin, s1);
+	while (dest[dlen])
+	{
+		dlen++;
+	}
 
-    cout << "Enter string s2: ";
-    getline (cin, s2);
+	for (i = 0; src[i] != 0; i++)
+	{
+		dest[dlen] = src[i];
+		dlen++;
+	}
 
-    result = s1 + s2;
-
-    cout << "Resultant String = "<< result;
-
-    return 0;
+	dest[dlen] = '\0';
+	return (dest);
 }
