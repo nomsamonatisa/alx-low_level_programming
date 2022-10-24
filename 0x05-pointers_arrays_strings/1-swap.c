@@ -5,7 +5,7 @@
  * @a: input parameters 1
  * @b: input parameters 2
  *
- * Return: Nothing
+ * Return: Nothing **/
 void swap_int(int *a, int *b)
 {
   int temp;
