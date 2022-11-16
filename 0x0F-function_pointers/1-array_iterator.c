@@ -1,13 +1,11 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "function_pointers.h"
+#include <stdlib.h>
 /**
- * array_iterator - prints each array elem on a newl
- * @array: array
- * @size: how many elem to print
- * @action: pointer to print in regular or hex
- * Return: void
- */
+ * array_iterator - iterates an array
+ * @array: is an array
+ * @size: is the size
+ * @action: is something
+*/
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	unsigned int i;
